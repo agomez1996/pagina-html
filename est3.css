@@ -1,0 +1,369 @@
+/*barra de navageacion*/
+
+nav {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #212F3D;
+}
+nav a{
+    float: left;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px; 
+    line-height: 25px;
+    border-radius: 4px;
+}
+nav a.logo{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+nav a:hover{
+    background-color: #313d49;
+    color: white;
+}
+nav a.active{
+    background-color: rgb(114, 102, 114);
+    color: rgb(218, 204, 213);
+}
+.header-right{
+    float: right;
+}
+.centro {
+    display: block;
+    margin-left: auto;
+}
+
+.logo{
+    background: url(img/ana.png) no-repeat 80% 80%;
+    background-size: contain;
+    width: 160px;
+    height: 80px;
+    float: left;
+    
+}
+
+.menu{
+    position: absolute;
+    right: 50px;
+    
+}
+
+.menu a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+}
+
+.menu a:hover{
+    color: whitesmoke;
+}
+.home {
+    max-width: 1000px;
+    min-height: 320px;
+}
+
+/*header {
+    /*min-height: 100vh;*/
+    /*height: 320px;*/
+    /*background: url(img/home.png) no-repeat;*/
+    /*background-size: cover;*/
+/*}*/
+
+
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: black;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 4px;
+    background: lightgoldenrodyellow;
+}
+@media only screen and (max-width: 550px){
+    nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #22374c;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
+
+/* ESTILOS DE LA PAGINA EN GENERAL */
+
+body {
+    background-color: #212F3D;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    margin: 20px 20px 20px 20px;
+    max-width: 1500px;
+    min-height: 340px;
+}
+header{
+    background-color: #212F3D;
+    color: lightgoldenrodyellow;
+    text-align: center; 
+    font-family: 'Inter', sans-serif;           
+}
+
+p{
+    padding: 5px 25px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: aliceblue;
+    text-align:center;
+}
+p.a {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2.a{
+    text-align: left;
+}
+
+h1, h2{
+    padding: 5px 15px;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+.pie{
+    
+    width: 100%;
+    background-color: #212F3D;
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+footer {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    background-color: dimgray;
+    color: azure;
+    text-align: center;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+* {box-sizing: border-box;
+}
+body {font-family: Verdana, sans-serif;
+}
+.mySlides {display: none;
+}
+img {vertical-align: middle;
+}
+
+
+/*imagen carrusel*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+        
+        /* Numero de texto (1/6 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+        
+        
+        .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.7s ease;
+        }
+        
+        .active {
+        background-color: #717171;
+        }
+        
+        /* degrade de la animacion */
+        .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .text {font-size: 11px}}
+
+/*testimonios*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.testimonios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.testimonios_header{
+    margin: 50px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimnoios_header h1{
+    font-size: 2.9rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: white;
+    padding: 10px 20px;
+}
+.testimonios_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.testimonios_caja{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #2e3a46;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.perfil-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.perfil-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong{
+    color: rgb(99, 13, 120);
+    font-size: 1.3rem;
+}
+.name-user span{
+    color: aqua;
+    font-size: 1.1rem;
+}
+.reseñas{
+    color: #c1a922;
+}
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comentarios_clientes{
+    color: rgb(103, 219, 181);
+}
+::selection{
+    color: black;
+    background-color: #f2f2f2;
+}
+
+/*boton redes*/
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #5c5c58;
+    color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+.buttons a:hover {
+    transform: scale(1.2);
+}
